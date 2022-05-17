@@ -1,4 +1,5 @@
 # **Downloading Genomes from RefSeq** <br />
+<br />
 
 
 ## **Step 1: Collect the assembly summary report for your organism of interest from the NCBI RefSeq Index** 
@@ -13,13 +14,13 @@ wget ftp://ftp.ncbi.nih.gov/genomes/refseq/bacteria/assembly_summary.txt
 
 
 For other organisms, navigate to the assembly summary report starting from the ‘Index of /genomes/refseq’ as shown below:
-
-
-
+<br />
+<br />
+<br />
 <br />
 <p align="center">
   <img 
-    width="680"
+    width="650"
     height="700"
     src="https://github.com/asadprodhan/Downloading_genomes_from_RefSeq/blob/main/Index_NCBI.PNG"
   >
@@ -28,7 +29,7 @@ For other organisms, navigate to the assembly summary report starting from the �
 Figure showing organism directory in RefSeq
 </p>
 
-
+<br />
 
 
 ## **Step 2: Filter out your targeted genomes from the assembly report** 
@@ -83,6 +84,7 @@ awk -F '\t' '{if($8 ~ /Pseudomonas/) print $1","$2","$3","$5","$8","$11","$12","
 
 - Column 20 ($20):  ftp_path, the download link (however, the links, as they appear here, do not download the files, the links need to be amended in the following step to get them download-ready)
 
+<br />
 
 
 ## **Step 3: Amend the above links to get them download-ready**
@@ -120,7 +122,7 @@ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/763/245/GCF_000763245.3_ASM7632
 
 
 - Save the names of the genomes and their newly built download-ready link in csv format. This file will serve as a temple or metadata for the next step
-
+<br />
 
 
 ## **Step 4: Download the genomes**
@@ -172,6 +174,9 @@ done < ${SAMPLES}
 
 
 - 'tput' commands are for color formating of the screen displays (optional)
+
+<br />
+<br />
 
 
 **The End**
