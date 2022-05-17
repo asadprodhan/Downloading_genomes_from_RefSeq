@@ -20,8 +20,8 @@ For other organisms, navigate to the assembly summary report starting from the â
 <br />
 <p align="center">
   <img 
-    width="650"
-    height="700"
+    width="380"
+    height="460"
     src="https://github.com/asadprodhan/Downloading_genomes_from_RefSeq/blob/main/Index_NCBI.PNG"
   >
 </p>
