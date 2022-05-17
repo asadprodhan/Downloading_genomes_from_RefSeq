@@ -152,6 +152,7 @@ do
         
     wget "${field2}" -O ${field1}.fna.gz 
     gzip -d ${field1}.fna.gz 
+    mv ${field1}.fna ${field1}.fasta
     echo "${Green}${Bold} Download completed${reset}:"${field1}""
     echo " "
     
@@ -168,6 +169,9 @@ done < ${SAMPLES}
 
 
 - 'gzip' decompress the file
+
+
+- 'mv' changes the file extension from 'fna' to 'fasta'
 
 
 - 'echo' will show the progress on the screen
