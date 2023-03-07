@@ -9,7 +9,7 @@
 
 
 ```
-wget ftp://ftp.ncbi.nih.gov/genomes/refseq/bacteria/assembly_summary.txt
+wget ftp://ftp.ncbi.nih.gov/genomes/refseq/bacteria/assembly_summary_refseq.txt
 ```
 
 
