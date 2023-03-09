@@ -163,7 +163,7 @@ done < ${SAMPLES}
 **What the script does:**
 
 
-- 'SAMPLES=*.csv' takes a csv file that has the genome names in Column 1 (Field 1) and the download-ready links in Column 2 (Field 2)
+- 'SAMPLES=*.csv' takes a csv file that has the genome names in Column 1 (Field 1) and the download-ready links in Column 2 (Field 2). ***Make sure that the genome names (Field1) DO NOT have any space***
 
 - 'wget' downloads and renames the files
 
